@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvnut7haufty"]
+
+[ext_resource type="Script" path="res://全局/game.gd" id="1_lnjib"]
+[ext_resource type="Script" path="res://类/stats.gd" id="2_cemcf"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_lnjib")
+
+[node name="PlayerStats" type="Node" parent="."]
+script = ExtResource("2_cemcf")

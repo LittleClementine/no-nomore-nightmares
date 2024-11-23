@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlnl8shf6qv6h"]
+
+[ext_resource type="Texture2D" uid="uid://c1g4lcw8glbom" path="res://素材资源/shuijing.png" id="1_ch0cg"]
+[ext_resource type="Script" path="res://UI/left_ui.gd" id="1_g2fqd"]
+
+[node name="LEFT_UI" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_g2fqd")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_ch0cg")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = ":0"

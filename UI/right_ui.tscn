@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0gdaboilpfyb"]
+
+[ext_resource type="Script" path="res://UI/right_ui.gd" id="1_a6u51"]
+
+[node name="RIGHT_UI" type="VBoxContainer"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("1_a6u51")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "减"
+
+[node name="XSPEED" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "200"
+
+[node name="Button2" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "加"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 2
+alignment = 2
+
+[node name="Button3" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+text = "减"
+
+[node name="YSPEED" type="Label" parent="HBoxContainer2"]
+layout_mode = 2
+text = "80"
+
+[node name="Button4" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+text = "加"
+
+[connection signal="pressed" from="HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="gui_input" from="HBoxContainer/XSPEED" to="." method="_on_xspeed_gui_input"]
+[connection signal="pressed" from="HBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="HBoxContainer2/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="gui_input" from="HBoxContainer2/YSPEED" to="." method="_on_yspeed_gui_input"]
+[connection signal="pressed" from="HBoxContainer2/Button4" to="." method="_on_button_4_pressed"]

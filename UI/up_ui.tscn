@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://snqq8pwfk3yb"]
+
+[ext_resource type="Script" path="res://UI/up_ui.gd" id="1_4vxhc"]
+[ext_resource type="Texture2D" uid="uid://2s560qoikq60" path="res://素材资源/heart.png" id="1_ignuc"]
+[ext_resource type="Texture2D" uid="uid://0x05xklykp5g" path="res://素材资源/skill1.png" id="2_aseuc"]
+[ext_resource type="Texture2D" uid="uid://54suuro8o43m" path="res://素材资源/skill2.png" id="3_dglu7"]
+[ext_resource type="Texture2D" uid="uid://bfoavrtq2f31n" path="res://素材资源/skill3.png" id="4_rus5q"]
+
+[node name="UP_UI" type="HBoxContainer"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.106
+offset_bottom = 0.103998
+grow_horizontal = 2
+script = ExtResource("1_4vxhc")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="heart" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_ignuc")
+expand_mode = 2
+
+[node name="heart2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_ignuc")
+expand_mode = 2
+
+[node name="heart3" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_ignuc")
+expand_mode = 2
+
+[node name="Depth" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "深度：360m"
+
+[node name="Skills" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="skill" type="TextureRect" parent="Skills"]
+layout_mode = 2
+texture = ExtResource("2_aseuc")
+expand_mode = 2
+
+[node name="skill2" type="TextureRect" parent="Skills"]
+layout_mode = 2
+texture = ExtResource("3_dglu7")
+expand_mode = 2
+
+[node name="skill3" type="TextureRect" parent="Skills"]
+layout_mode = 2
+texture = ExtResource("4_rus5q")
+expand_mode = 2
