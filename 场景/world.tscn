@@ -90,3 +90,6 @@ position = Vector2(186, 1311)
 
 [node name="Crystal12" parent="Crystals" instance=ExtResource("7_24yxo")]
 position = Vector2(94, 1521)
+
+[node name="Crystal13" parent="Crystals" instance=ExtResource("7_24yxo")]
+position = Vector2(207, 1523)
